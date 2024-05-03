@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")" #set wd to file location
-SHOW_TAGS=(4D1 4TV 4GP 4UL 4DKM 4DD 4LB 4SS 4DLL)  #insert you favourite show tags here
+SHOW_TAGS=(4SSUSun)  #insert you favourite show tags here
 STORAGE=/mnt/storage/Musik/FM4/downloads
 for SHOW_TAG in "${SHOW_TAGS[@]}"; do
   URL="$(python fm4.py -s ${SHOW_TAG}| tr -d '[],')" #call python script to get the stream URL
